@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Magro</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="anasayfa">Anasayfa</string>
+    <string name="urunler">Ürünler</string>
+    <string name="arama">Arama</string>
+    <string name="hesabim">Hesabım</string>
+    <string name="sepet">Sepet</string>
+    <string name="menu">Menu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
