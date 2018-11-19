@@ -1,5 +1,8 @@
-package com.example.cuma.magro;
+package com.example.cuma.magro.Activity;
 
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
@@ -20,6 +23,7 @@ import com.example.cuma.magro.Fragment.HomeFragment;
 import com.example.cuma.magro.Fragment.SearchFragment;
 import com.example.cuma.magro.Fragment.ShopFragment;
 import com.example.cuma.magro.Fragment.UserFragment;
+import com.example.cuma.magro.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.ifRoom,new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_framelayout,new HomeFragment()).commit();
     }
 
 
@@ -54,20 +58,20 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_anasayfa:
                     selectedFragment=new HomeFragment();
-                    return true;
+                    break;
                 case R.id.navigation_urunler:
                     selectedFragment=new ShopFragment();
-                    return true;
+                    break;
                 case R.id.navigation_arama:
                     selectedFragment=new SearchFragment();
-                    return true;
+                    break;
                 case R.id.navigation_hesap:
                     selectedFragment=new UserFragment();
-                    return true;
+                    break;
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.ifRoom,selectedFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.main_framelayout,selectedFragment).commit();
 
-            return false;
+            return true;
         }
     };
 

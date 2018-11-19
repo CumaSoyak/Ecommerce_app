@@ -4,7 +4,8 @@
     <item
         android:id="@+id/navigation_anasayfa"
         android:icon="@mipmap/anasayfa"
-        android:title="@string/anasayfa" />
+        android:title="@string/anasayfa"
+        />
 
     <item
         android:id="@+id/navigation_urunler"

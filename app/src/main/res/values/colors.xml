@@ -4,4 +4,14 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="beyaz">#FFFFFF</color>
+    <color name="arkaplan">#f7f7f7</color>
+    <color name="bluedark">#2f333f</color>
+    <color name="textcolorhint">#ece0e0</color>
+    <color name="siyah">#000000</color>
+    <color name="turuncu">#ef6238</color>
+    <color name="acikgri">#F0F8FF</color>
+    <color name="urundetay">#C0C0C0</color>
+    <color name="view">#e5e5e5</color>
+
+
 </resources>
