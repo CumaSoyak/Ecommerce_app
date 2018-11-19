@@ -1,6 +1,7 @@
 package com.example.cuma.magro.Activity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -34,12 +35,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        sepet = findViewById(R.id.menu);
-        menu = findViewById(R.id.sepet);
+        sepet = findViewById(R.id.sepet);
+        menu = findViewById(R.id.menu);
         sepet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Tıkladınız",Toast.LENGTH_LONG).show();
+                Intent ıntent=new Intent(MainActivity.this,SepetActivity.class);
+                startActivity(ıntent);
             }
         });
 

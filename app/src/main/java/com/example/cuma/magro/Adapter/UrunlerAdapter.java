@@ -23,9 +23,6 @@ import java.util.List;
 
 public class UrunlerAdapter extends RecyclerView.Adapter<UrunlerAdapter.MyViewHolder> {
     private Context context;
-    private ArrayList<String> murunaciklama = new ArrayList<>();
-    private ArrayList<String> murunresim = new ArrayList<>();
-    private ArrayList<String> murunfiyat = new ArrayList<>();
     public List<Urunler> urunlerList = new ArrayList<>();
 
     public UrunlerAdapter(Context context, List<Urunler> urunlerList) {

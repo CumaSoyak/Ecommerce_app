@@ -85,6 +85,7 @@ public class ShopFragment extends Fragment {
         adapter.addFragment(new Shop_Ayakkabi_Fragment(), "Ayakkabı");
         adapter.addFragment(new Shop_Aksesuar_Fragment(), "Aksesuar");
         viewPager.setAdapter(adapter);
+        /**/
     }
 
 

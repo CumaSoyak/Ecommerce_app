@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.SepetActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <View
         android:id="@+id/view9"
         android:layout_width="0dp"
@@ -33,37 +37,41 @@
         android:id="@+id/recyclerView_sepet"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/view10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view9" />
 
-    <View
-        android:id="@+id/view10"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:background="@color/urundetay"
-        app:layout_constraintBottom_toTopOf="@+id/alisveris_tamamla"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView_sepet" />
+        <View
+            android:id="@+id/view10"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/urundetay"
+            app:layout_constraintBottom_toTopOf="@+id/alisveris_tamamla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView_sepet" />
 
-    <Button
-        android:id="@+id/alisveris_tamamla"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/uye_buton"
-        android:fontFamily="@font/alfa_slab_one"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="Alışverişi Tamamla"
-        android:textColor="@color/beyaz"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view10" />
+        <Button
+            android:id="@+id/alisveris_tamamla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/uye_buton"
+            android:fontFamily="@font/alfa_slab_one"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Alışverişi Tamamla"
+            android:textColor="@color/beyaz"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view10" />
 
     <TextView
         android:id="@+id/textView11"
@@ -128,5 +136,5 @@
         android:textColor="@color/bluedark"
         app:layout_constraintBottom_toBottomOf="@+id/view10"
         app:layout_constraintStart_toStartOf="@+id/kargo" />
-
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/urun_resim_sepet"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginStart="8dp"
@@ -24,7 +24,7 @@
             app:srcCompat="@drawable/kadin" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/urun_isim_sepet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -32,7 +32,7 @@
             android:layout_marginEnd="8dp"
             android:text="Kapşonlu Uzun Triko Hırka"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/urun_resim_sepet"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -43,20 +43,20 @@
             android:text="Beden"
             android:textColor="@color/bluedark"
             app:layout_constraintBottom_toTopOf="@+id/textView7"
-            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/beden_sepet"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintStart_toEndOf="@+id/urun_resim_sepet"
+            app:layout_constraintTop_toBottomOf="@+id/urun_isim_sepet" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/beden_sepet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:text="M"
-            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintBottom_toTopOf="@+id/renk_sepet"
             app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/urun_isim_sepet" />
 
         <TextView
             android:id="@+id/textView7"
@@ -71,13 +71,13 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/renk_sepet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mavi"
-            app:layout_constraintBottom_toTopOf="@+id/textView10"
-            app:layout_constraintStart_toStartOf="@+id/textView6"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintBottom_toTopOf="@+id/fiyat_sepet"
+            app:layout_constraintStart_toStartOf="@+id/beden_sepet"
+            app:layout_constraintTop_toBottomOf="@+id/beden_sepet" />
 
         <TextView
             android:id="@+id/textView9"
@@ -91,14 +91,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/fiyat_sepet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="56 TL"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintStart_toStartOf="@+id/renk_sepet"
+            app:layout_constraintTop_toBottomOf="@+id/renk_sepet" />
 
         <TextView
             android:id="@+id/textView12"
