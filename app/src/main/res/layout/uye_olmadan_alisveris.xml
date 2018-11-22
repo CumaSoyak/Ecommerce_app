@@ -14,12 +14,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="4dp"
         android:text="Lütfen eposta adresinizi giriniz"
-        app:layout_constraintBottom_toTopOf="@+id/editText9"
-        app:layout_constraintStart_toStartOf="@+id/editText9"
+        app:layout_constraintBottom_toTopOf="@+id/uye_olmadan_alisveris_email"
+        app:layout_constraintStart_toStartOf="@+id/uye_olmadan_alisveris_email"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/uye_olmadan_alisveris_email"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -32,14 +32,14 @@
         android:textColorHint="@color/textcolorhint"
         android:background="@drawable/uyelik_butonlar"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+        app:layout_constraintBottom_toTopOf="@+id/uye_olmadan_alisveris_checxbox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/uye_olmadan_alisveris_checxbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -47,13 +47,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="Tarafımıza Magro tarafından ticari elektronik ileti gönderilmesine onay veriyorum"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/uye_olmadan_alisveris_alisveris_yap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/uye_olmadan_alisveris_email" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/uye_olmadan_alisveris_alisveris_yap"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -65,5 +65,5 @@
         android:textColor="@color/beyaz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+        app:layout_constraintTop_toBottomOf="@+id/uye_olmadan_alisveris_checxbox" />
 </android.support.constraint.ConstraintLayout>

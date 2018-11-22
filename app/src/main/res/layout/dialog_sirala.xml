@@ -6,6 +6,21 @@
     android:layout_height="400dp"
     android:background="@color/urundetay">
 
+    <TextView
+        android:id="@+id/urun_sirala_vazgec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Vazgec"
+        android:textColor="@color/bluedark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indirim_orani" />
+
     <Button
         android:id="@+id/fiyat_artan"
         android:layout_width="300dp"
@@ -52,4 +67,5 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fiyat_azalan" />
+
 </android.support.constraint.ConstraintLayout>

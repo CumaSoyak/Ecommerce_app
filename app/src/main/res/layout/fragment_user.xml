@@ -57,7 +57,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/uye_girisi_email"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="16dp"
@@ -68,14 +68,14 @@
                 android:textColorHint="@color/textcolorhint"
                 android:background="@drawable/uyelik_butonlar"
                 android:inputType="textEmailAddress"
-                app:layout_constraintBottom_toTopOf="@+id/editText2"
+                app:layout_constraintBottom_toTopOf="@+id/uye_girisi_parola"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/uye_girisi_parola"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="16dp"
@@ -87,24 +87,24 @@
                 android:textColorHint="@color/textcolorhint"
                 android:background="@drawable/uyelik_butonlar"
                 android:inputType="textPassword"
-                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintBottom_toTopOf="@+id/uye_girisi_sifremi_unuttum"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/uye_girisi_email" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/uye_girisi_sifremi_unuttum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="Şifremi unuttum"
-                app:layout_constraintBottom_toTopOf="@+id/button"
-                app:layout_constraintStart_toStartOf="@+id/editText2"
-                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                app:layout_constraintBottom_toTopOf="@+id/uye_girisi_giris_buton"
+                app:layout_constraintStart_toStartOf="@+id/uye_girisi_parola"
+                app:layout_constraintTop_toBottomOf="@+id/uye_girisi_parola" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/uye_girisi_giris_buton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -118,10 +118,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                app:layout_constraintTop_toBottomOf="@+id/uye_girisi_sifremi_unuttum" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/uye_girisi_facebook_baglan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -142,11 +142,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ya da "
-                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintBottom_toTopOf="@+id/uye_girisi_facebook_baglan"
                 app:layout_constraintEnd_toStartOf="@+id/view2"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/view"
-                app:layout_constraintTop_toBottomOf="@+id/button" />
+                app:layout_constraintTop_toBottomOf="@+id/uye_girisi_giris_buton" />
 
             <View
                 android:id="@+id/view"
@@ -216,7 +216,7 @@
                         app:layout_constraintVertical_bias="1.0" />
 
                     <Button
-                        android:id="@+id/button4"
+                        android:id="@+id/uye_kayit_facebook_kayit"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -239,13 +239,13 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="ya da "
-                        app:layout_constraintBottom_toTopOf="@+id/button4"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_facebook_kayit"
                         app:layout_constraintEnd_toStartOf="@+id/view6"
                         app:layout_constraintStart_toEndOf="@+id/view5"
-                        app:layout_constraintTop_toBottomOf="@+id/button5" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_uye_ol" />
 
                     <Button
-                        android:id="@+id/button5"
+                        android:id="@+id/uye_kayit_uye_ol"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -259,7 +259,7 @@
                         app:layout_constraintBottom_toTopOf="@+id/textView16"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_kural3" />
 
                     <TextView
                         android:id="@+id/textView17"
@@ -268,12 +268,12 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:text="Lütfen aşağıda istenen bilgileri eksiksiz giriniz"
-                        app:layout_constraintBottom_toTopOf="@+id/editText3"
-                        app:layout_constraintStart_toStartOf="@+id/editText3"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_ad"
+                        app:layout_constraintStart_toStartOf="@+id/uye_kayit_ad"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
-                        android:id="@+id/editText3"
+                        android:id="@+id/uye_kayit_ad"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="16dp"
@@ -286,13 +286,13 @@
                         android:gravity="center"
                         android:textColorHint="@color/textcolorhint"
                         android:inputType="textPersonName"
-                        app:layout_constraintBottom_toTopOf="@+id/editText4"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_soyad"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
                     <EditText
-                        android:id="@+id/editText4"
+                        android:id="@+id/uye_kayit_soyad"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="16dp"
@@ -305,13 +305,13 @@
                         android:gravity="center"
                         android:textColorHint="@color/textcolorhint"
                         android:background="@drawable/uyelik_butonlar"
-                        app:layout_constraintBottom_toTopOf="@+id/editText5"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_email"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_ad" />
 
                     <EditText
-                        android:id="@+id/editText5"
+                        android:id="@+id/uye_kayit_email"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="16dp"
@@ -324,13 +324,13 @@
                         android:textColorHint="@color/textcolorhint"
                         android:background="@drawable/uyelik_butonlar"
                         android:inputType="textEmailAddress"
-                        app:layout_constraintBottom_toTopOf="@+id/editText6"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_telefon"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_soyad" />
 
                     <EditText
-                        android:id="@+id/editText6"
+                        android:id="@+id/uye_kayit_telefon"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="16dp"
@@ -346,7 +346,7 @@
                         app:layout_constraintBottom_toTopOf="@+id/textView18"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_email" />
 
                     <TextView
                         android:id="@+id/textView18"
@@ -356,8 +356,8 @@
                         android:layout_marginBottom="8dp"
                         android:text="Doğum Tarihiniz"
                         app:layout_constraintBottom_toTopOf="@+id/buton_gun"
-                        app:layout_constraintStart_toStartOf="@+id/editText6"
-                        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+                        app:layout_constraintStart_toStartOf="@+id/uye_kayit_telefon"
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_telefon" />
 
                     <Button
                         android:id="@+id/buton_gun"
@@ -368,7 +368,7 @@
                         android:layout_marginBottom="8dp"
                         android:background="@drawable/uyelik_butonlar"
                         android:text="Gün"
-                        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_radio_group_cinsiyet"
                         app:layout_constraintEnd_toStartOf="@+id/buton_ay"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="@+id/textView18"
@@ -396,33 +396,33 @@
                         android:background="@drawable/uyelik_butonlar"
                         android:text="Yıl"
                         app:layout_constraintBottom_toBottomOf="@+id/buton_ay"
-                        app:layout_constraintEnd_toEndOf="@+id/editText6"
+                        app:layout_constraintEnd_toEndOf="@+id/uye_kayit_telefon"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toEndOf="@+id/buton_ay"
                         app:layout_constraintTop_toTopOf="@+id/buton_ay" />
 
                     <RadioGroup
-                        android:id="@+id/radioGroup"
+                        android:id="@+id/uye_kayit_radio_group_cinsiyet"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="16dp"
                         android:orientation="horizontal"
-                        app:layout_constraintBottom_toTopOf="@+id/editText7"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_parola"
                         app:layout_constraintEnd_toStartOf="@+id/buton_yıl"
                         app:layout_constraintStart_toStartOf="@+id/buton_gun"
                         app:layout_constraintTop_toBottomOf="@+id/buton_gun">
 
                         <RadioButton
-                            android:id="@+id/radioButton2"
+                            android:id="@+id/uye_kayit_erkek_radiobuton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Kadın" />
 
                         <RadioButton
-                            android:id="@+id/radioButton"
+                            android:id="@+id/uye_kayit_kiz_radiobuton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -430,7 +430,7 @@
                     </RadioGroup>
 
                     <EditText
-                        android:id="@+id/editText7"
+                        android:id="@+id/uye_kayit_parola"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="16dp"
@@ -443,13 +443,13 @@
                         android:textColorHint="@color/textcolorhint"
                         android:background="@drawable/uyelik_butonlar"
                         android:inputType="textPassword"
-                        app:layout_constraintBottom_toTopOf="@+id/editText8"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_parola_tekrar"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_radio_group_cinsiyet" />
 
                     <EditText
-                        android:id="@+id/editText8"
+                        android:id="@+id/uye_kayit_parola_tekrar"
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="16dp"
@@ -462,13 +462,13 @@
                         android:textColorHint="@color/textcolorhint"
                         android:background="@drawable/uyelik_butonlar"
                         android:inputType="textPassword"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_kural1"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_parola" />
 
                     <CheckBox
-                        android:id="@+id/checkBox"
+                        android:id="@+id/uye_kayit_kural1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -476,13 +476,13 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="8dp"
                         android:text="Magro tarafından e-posta ile promosyon/kampanya maili almak istiyorum"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_kural2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_parola_tekrar" />
 
                     <CheckBox
-                        android:id="@+id/checkBox2"
+                        android:id="@+id/uye_kayit_kural2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -490,21 +490,21 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="8dp"
                         android:text="Magro tarafından  promosyon/kampanya SMS'i almak istiyorum"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_kural3"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_kural1" />
 
                     <CheckBox
-                        android:id="@+id/checkBox3"
+                        android:id="@+id/uye_kayit_kural3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="Kuralları ve Koşulları okudum,onaylıyorum"
-                        app:layout_constraintBottom_toTopOf="@+id/button5"
-                        app:layout_constraintStart_toStartOf="@+id/checkBox2"
-                        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+                        app:layout_constraintBottom_toTopOf="@+id/uye_kayit_uye_ol"
+                        app:layout_constraintStart_toStartOf="@+id/uye_kayit_kural2"
+                        app:layout_constraintTop_toBottomOf="@+id/uye_kayit_kural2" />
 
                 </android.support.constraint.ConstraintLayout>
             </ScrollView>
@@ -523,12 +523,12 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="4dp"
                 android:text="Lütfen eposta adresinizi giriniz"
-                app:layout_constraintBottom_toTopOf="@+id/editText9"
-                app:layout_constraintStart_toStartOf="@+id/editText9"
+                app:layout_constraintBottom_toTopOf="@+id/uye_olmadan_alisveris_email"
+                app:layout_constraintStart_toStartOf="@+id/uye_olmadan_alisveris_email"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/uye_olmadan_alisveris_email"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="16dp"
@@ -541,14 +541,14 @@
                 android:textColorHint="@color/textcolorhint"
                 android:background="@drawable/uyelik_butonlar"
                 android:inputType="textEmailAddress"
-                app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+                app:layout_constraintBottom_toTopOf="@+id/uye_olmadan_alisveris_checxbox"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.556"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/uye_olmadan_alisveris_checxbox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -556,13 +556,13 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="Tarafımıza Magro tarafından ticari elektronik ileti gönderilmesine onay veriyorum"
-                app:layout_constraintBottom_toTopOf="@+id/button9"
+                app:layout_constraintBottom_toTopOf="@+id/uye_olmadan_alisveris_alisveris_yap"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+                app:layout_constraintTop_toBottomOf="@+id/uye_olmadan_alisveris_email" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/uye_olmadan_alisveris_alisveris_yap"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -574,7 +574,7 @@
                 android:textColor="@color/beyaz"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+                app:layout_constraintTop_toBottomOf="@+id/uye_olmadan_alisveris_checxbox" />
         </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>

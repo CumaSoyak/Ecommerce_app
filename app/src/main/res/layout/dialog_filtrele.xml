@@ -41,14 +41,14 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/uyelik_butonlar"
-        app:layout_constraintBottom_toTopOf="@+id/urun_filtrele_dialog_buton"
+        app:layout_constraintBottom_toTopOf="@+id/urun_filtrele_urun_goster"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/renk_spinner" />
 
     <Button
-        android:id="@+id/urun_filtrele_dialog_buton"
+        android:id="@+id/urun_filtrele_urun_goster"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -75,5 +75,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/urun_filtrele_dialog_buton" />
+        app:layout_constraintTop_toBottomOf="@+id/urun_filtrele_urun_goster" />
 </android.support.constraint.ConstraintLayout>

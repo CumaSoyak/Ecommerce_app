@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.cuma.magro.Adapter.SepetAdapter;
 import com.example.cuma.magro.Class.Sepet;
@@ -19,11 +20,19 @@ public class SepetActivity extends AppCompatActivity {
     private ArrayList<Sepet> sepetList;
     private RecyclerView recyclerView;
     private SepetAdapter sepetAdapter;
+    TextView ara_toplam,kargo,toplam;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sepet);
+
+        /*Tanımlamalar*/
         recyclerView=findViewById(R.id.recyclerView_sepet);
+        ara_toplam=findViewById(R.id.ara_toplam);
+        kargo=findViewById(R.id.kargo);
+        toplam=findViewById(R.id.toplam);
+        /**************/
+
         sepetList=new ArrayList<Sepet>();
         sepetAdapter=new SepetAdapter(sepetList);
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(this);

@@ -20,14 +20,14 @@
             android:layout_marginEnd="4dp"
             android:layout_marginBottom="8dp"
             android:scaleType="centerCrop"
-            app:layout_constraintBottom_toTopOf="@+id/goster_aciklama"
+            app:layout_constraintBottom_toTopOf="@+id/goster_isim"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/kadin" />
 
         <TextView
-            android:id="@+id/goster_aciklama"
+            android:id="@+id/goster_isim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -49,7 +49,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/goster_aciklama" />
+            app:layout_constraintTop_toBottomOf="@+id/goster_isim" />
 
         <TextView
             android:id="@+id/textView20"
@@ -128,7 +128,7 @@
             android:background="@color/view"
             app:layout_constraintBottom_toTopOf="@+id/goster_adet_spinner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/goster_fiyat" />
 
@@ -206,46 +206,6 @@
             app:layout_constraintStart_toStartOf="@+id/goster_urun_detay"
             app:layout_constraintTop_toBottomOf="@+id/goster_urun_hakkinda" />
 
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/view8"
-            app:layout_constraintTop_toTopOf="@+id/view8" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/textView25"
-            app:layout_constraintStart_toStartOf="@+id/view8"
-            app:layout_constraintTop_toBottomOf="@+id/textView23" />
-
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/textView27"
-            app:layout_constraintStart_toStartOf="@+id/view8"
-            app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="8dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/view8"
-            app:layout_constraintStart_toStartOf="@+id/view8" />
-
         <Button
             android:id="@+id/goster_sepete_ekle"
             android:layout_width="match_parent"
@@ -255,14 +215,24 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/uye_buton"
+            android:drawableLeft="@mipmap/sepete_ekle"
             android:fontFamily="@font/alfa_slab_one"
             android:text="Sepete Ekle"
-            android:drawableLeft="@mipmap/sepete_ekle"
             android:textColor="@color/beyaz"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+        <ListView
+            android:id="@+id/urun_ozellik_listview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view8" />
 
 
     </android.support.constraint.ConstraintLayout>
