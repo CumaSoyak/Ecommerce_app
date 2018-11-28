@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView sepet, menu;
 
-
+    /*Hatalar giderildi*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         sepet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ıntent=new Intent(MainActivity.this,SepetActivity.class);
+                Intent ıntent = new Intent(MainActivity.this, SepetActivity.class);
                 startActivity(ıntent);
             }
         });
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_framelayout,new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_framelayout, new HomeFragment()).commit();
     }
 
 
@@ -56,22 +56,22 @@ public class MainActivity extends AppCompatActivity {
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment selectedFragment=null;
+            Fragment selectedFragment = null;
             switch (item.getItemId()) {
                 case R.id.navigation_anasayfa:
-                    selectedFragment=new HomeFragment();
+                    selectedFragment = new HomeFragment();
                     break;
                 case R.id.navigation_urunler:
-                    selectedFragment=new ShopFragment();
+                    selectedFragment = new ShopFragment();
                     break;
                 case R.id.navigation_arama:
-                    selectedFragment=new SearchFragment();
+                    selectedFragment = new SearchFragment();
                     break;
                 case R.id.navigation_hesap:
-                    selectedFragment=new UserFragment();
+                    selectedFragment = new UserFragment();
                     break;
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.main_framelayout,selectedFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.main_framelayout, selectedFragment).commit();
 
             return true;
         }
