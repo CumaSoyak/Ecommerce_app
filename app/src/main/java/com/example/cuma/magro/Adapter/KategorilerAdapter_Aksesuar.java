@@ -26,7 +26,7 @@ public class KategorilerAdapter_Aksesuar extends RecyclerView.Adapter<Kategorile
     private FragmentManager mFragmentManager;
     FragmentTransaction fragmentTransaction;
     ShopFragment shopFragment = new ShopFragment();
-
+   /*todo değişilkil*/
 
     private Context context;
     private List<Kategoriler> kateogorilerList = new ArrayList<>();
