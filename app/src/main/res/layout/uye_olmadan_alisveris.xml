@@ -30,7 +30,7 @@
         android:hint="Eposta adresiniz"
         android:gravity="center"
         android:textColorHint="@color/textcolorhint"
-        android:background="@drawable/uyelik_butonlar"
+        android:background="@drawable/uyelik_buton_color"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/uye_olmadan_alisveris_checxbox"
         app:layout_constraintEnd_toEndOf="parent"
