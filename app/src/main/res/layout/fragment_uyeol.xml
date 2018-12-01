@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Uyelik_Fragment.UyeolFragment">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="@color/bluedark"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                    app:layout_constraintEnd_toStartOf="@+id/textView16"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView16"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="@color/bluedark"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="@+id/textView16"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/uye_kayit_facebook_kayit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Facebook ile Üye ol "
+                    android:background="@drawable/uye_buton_facebook"
+                    android:textColor="@color/beyaz"
+                    android:fontFamily="@font/alfa_slab_one"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="ya da "
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_facebook_kayit"
+                    app:layout_constraintEnd_toStartOf="@+id/view6"
+                    app:layout_constraintStart_toEndOf="@+id/view5"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_uye_ol" />
+
+                <Button
+                    android:id="@+id/uye_kayit_uye_ol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/uye_buton"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="Üye ol "
+                    android:textColor="@color/beyaz"
+                    app:layout_constraintBottom_toTopOf="@+id/textView16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_kural3" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Lütfen aşağıda istenen bilgileri eksiksiz giriniz"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_ad"
+                    app:layout_constraintStart_toStartOf="@+id/uye_kayit_ad"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/uye_kayit_ad"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/uyelik_buton_color"
+                    android:ems="10"
+                    android:hint="Adınız"
+                    android:gravity="center"
+                    android:textColorHint="@color/textcolorhint"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_soyad"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <EditText
+                    android:id="@+id/uye_kayit_soyad"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Soyadınız"
+                    android:gravity="center"
+                    android:textColorHint="@color/textcolorhint"
+                    android:background="@drawable/uyelik_buton_color"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_ad" />
+
+                <EditText
+                    android:id="@+id/uye_kayit_email"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:hint="Eposta adresiniz"
+                    android:gravity="center"
+                    android:textColorHint="@color/textcolorhint"
+                    android:background="@drawable/uyelik_buton_color"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_telefon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_soyad" />
+
+                <EditText
+                    android:id="@+id/uye_kayit_telefon"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:hint="Cep Telefon Numaranız-örn: 532 XXX"
+                    android:gravity="center"
+                    android:textColorHint="@color/textcolorhint"
+                    android:background="@drawable/uyelik_buton_color"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toTopOf="@+id/textView18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_email" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Doğum Tarihiniz"
+                    app:layout_constraintBottom_toTopOf="@+id/buton_gun"
+                    app:layout_constraintStart_toStartOf="@+id/uye_kayit_telefon"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_telefon" />
+
+                <Button
+                    android:id="@+id/buton_gun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/uyelik_buton_color"
+                    android:text="Gün"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_radio_group_cinsiyet"
+                    app:layout_constraintEnd_toStartOf="@+id/buton_ay"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:layout_constraintVertical_bias="0.465" />
+
+                <Button
+                    android:id="@+id/buton_ay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/uyelik_buton_color"
+                    android:text="Ay"
+                    app:layout_constraintBottom_toBottomOf="@+id/buton_gun"
+                    app:layout_constraintEnd_toStartOf="@+id/buton_yıl"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/buton_gun" />
+
+                <Button
+                    android:id="@+id/buton_yıl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/uyelik_buton_color"
+                    android:text="Yıl"
+                    app:layout_constraintBottom_toBottomOf="@+id/buton_ay"
+                    app:layout_constraintEnd_toEndOf="@+id/uye_kayit_telefon"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/buton_ay"
+                    app:layout_constraintTop_toTopOf="@+id/buton_ay" />
+
+                <RadioGroup
+                    android:id="@+id/uye_kayit_radio_group_cinsiyet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_parola"
+                    app:layout_constraintEnd_toStartOf="@+id/buton_yıl"
+                    app:layout_constraintStart_toStartOf="@+id/buton_gun"
+                    app:layout_constraintTop_toBottomOf="@+id/buton_gun">
+
+                    <RadioButton
+                        android:id="@+id/uye_kayit_erkek_radiobuton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kadın" />
+
+                    <RadioButton
+                        android:id="@+id/uye_kayit_kiz_radiobuton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Erkek" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/uye_kayit_parola"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:hint="Şifreniz"
+                    android:gravity="center"
+                    android:textColorHint="@color/textcolorhint"
+                    android:background="@drawable/uyelik_buton_color"
+                    android:inputType="textPassword"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_parola_tekrar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_radio_group_cinsiyet" />
+
+                <EditText
+                    android:id="@+id/uye_kayit_parola_tekrar"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:hint="Şifreniz(Tekrar)"
+                    android:gravity="center"
+                    android:textColorHint="@color/textcolorhint"
+                    android:background="@drawable/uyelik_buton_color"
+                    android:inputType="textPassword"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_kural1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_parola" />
+
+                <CheckBox
+                    android:id="@+id/uye_kayit_kural1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Magro tarafından e-posta ile promosyon/kampanya maili almak istiyorum"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_kural2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_parola_tekrar" />
+
+                <CheckBox
+                    android:id="@+id/uye_kayit_kural2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Magro tarafından  promosyon/kampanya SMS'i almak istiyorum"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_kural3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_kural1" />
+
+                <CheckBox
+                    android:id="@+id/uye_kayit_kural3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Kuralları ve Koşulları okudum,onaylıyorum"
+                    app:layout_constraintBottom_toTopOf="@+id/uye_kayit_uye_ol"
+                    app:layout_constraintStart_toStartOf="@+id/uye_kayit_kural2"
+                    app:layout_constraintTop_toBottomOf="@+id/uye_kayit_kural2" />
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

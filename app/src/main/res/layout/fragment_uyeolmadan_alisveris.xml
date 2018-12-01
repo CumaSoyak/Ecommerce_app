@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.constraint.ConstraintLayout android:id="@+id/uye_olmadan_alisveris_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uyelik_Fragment.UyeolmadanAlisverisFragment"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
         android:id="@+id/textView14"
